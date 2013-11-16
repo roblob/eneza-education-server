@@ -14,7 +14,7 @@ public class JSONHandler {
 		JsonObject email = obj.getAsJsonObject("email");
 		JsonObject user_type = obj.getAsJsonObject("user_type");
 		
-		
+		User user = new User(names.getAsString(), password.getAsString(), email.getAsString(), mobile_number.getAsString(), user_type.getAsString());
 		
 		return null;
 		

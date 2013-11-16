@@ -1,6 +1,6 @@
 package users;
 
-public abstract class User {
+public class User {
 	public String name;
 	public String password;
 	protected String mobile_number;
@@ -9,10 +9,11 @@ public abstract class User {
 	public int user_id;
 	public String username;
 
-	public User(String name, String password, String contactData, String number) {
+	public User(String name, String password, String contactData, String number, String user_type) {
 		this(name, password);
 		this.email = contactData;
 		this.mobile_number = number;
+		this.user_type= user_type;
 	}
 
 	private User(String name, String password) {
