@@ -8,11 +8,12 @@ public class DataExtraction {
 	//TODO
 	//returns a json string of kez value pairs corresponding to
 	//all students within the class requested
-	public static String getListOfPhoneNumber(Document classDoc, Document studentDoc, String class_id, String school_id) {
+	public static String getListOfPhoneNumber(String class_id, String school_id) {
 		
-		Element classRoot = classDoc.getDocumentElement();
+		Element classRoot = Data.CentralDataStorage.classDoc.getDocumentElement();
 		
 		Element classSpecified;
+		
 		
 		return null;
 	}
